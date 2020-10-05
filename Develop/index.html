@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Work Day Scheduler</title>
+  </head>
+
+  <body>
+    <header class="jumbotron">
+      <h1 class="display-3">Work Day Scheduler</h1>
+      <p class="lead">A simple calendar app for scheduling your work day</p>
+      <p id="currentDay" class="lead"></p>
+      <div id= "clockDisplay" class="container"></div>
+    </header>
+    <!-- Timeblocks go here -->
+    <!--the containerA below is used to holp the actual planner and what text is inside of the planner to begin-->
+    <div class="containerA">
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th scope="col">Time</th>
+            <th scope="col", colspan="3">Appointments/ To-Do</th>
+            <th scope="col" >Save</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- content of each row fill to meet Requirements-->
+          <tr>
+            <th scope="row">9 am</th>
+            <td colspan="3">
+              <input type="text" placeholder="Whats on the schedule?" name="todo-text" id="nineAm-todo" />
+              <span id="user-nineAm-todo"></span>
+            </td>
+            <div id="msg"></div>
+            <td><button id="NineSchedule">Schedule!</button></td>
+          </tr>
+          <tr>
+            <th scope="row">10 am</th>
+            <td colspan="3">
+              <input type="text" placeholder="Whats on the schedule?" name="todo-text" id="tenAm-todo" />
+              <span id="user-tenAm-todo"></span>
+            </td>
+            <div id="msg"></div>
+            <td><button id="TenSchedule">Schedule!</button></td>
+          </tr>
+          <tr>
+            <th scope="row">11 am</th>
+            <td colspan="3">
+              <input type="text" placeholder="Whats on the schedule?" name="todo-text" id="elevenAm-todo" />
+              <span id="#user-elevenAm-todo"></span>
+            </td>
+            <div id="msgTwo"></div>
+            <td><button id="ElevenSchedule">Schedule!</button></td>
+          </tr>
+          <tr>
+            <th scope="row">12 pm</th>
+            <td colspan="3">
+              <input type="text" placeholder="Whats on the schedule?" name="todo-text" id="twelvePm-todo" />
+              <span id="user-twelvePm-todo"></span>
+            </td>
+            <div id="msg"></div>
+            <td><button id="#twelveSchedule">Schedule!</button></td>
+          </tr>
+          <tr>
+            <th scope="row">1 pm</th>
+            <td colspan="3">
+              <input type="text" placeholder="Whats on the schedule?" name="todo-text" id="onePm-todo" />
+              <span id="user-onePm-todo"></span>
+            </td>
+            <div id="msg"></div>
+            <td><button id="oneSchedule">Schedule!</button></td>
+          </tr>
+          <tr>
+            <th scope="row">2 pm</th>
+            <td colspan="3">
+              <input type="text" placeholder="Whats on the schedule?" name="todo-text" id="twoPm-todo" />
+              <span id="user-twoPm-todo"></span>
+            </td>
+            <div id="msg"></div>
+            <td><button id="twoSchedule">Schedule!</button></td>
+          </tr>
+          <tr>
+            <th scope="row">3 pm</th>
+            <td colspan="3">
+              <input type="text" placeholder="Whats on the schedule?" name="todo-text" id="threePm-todo" />
+              <span id="user-threePm-todo"></span>
+            </td>
+            <div id="msg"></div>
+            <td><button id="threeSchedule">Schedule!</button></td>
+          </tr>
+          <tr>
+            <th scope="row">4 pm</th>
+            <td colspan="3">
+              <input type="text" placeholder="Whats on the schedule?" name="todo-text" id="fourPm-todo" />
+              <span id="user-fourPm-todo"></span>
+            </td>
+            <div id="msg"></div>
+            <td><button id="fourSchedule">Schedule!</button></td>
+          </tr>
+          <tr>
+            <th scope="row">5 pm</th>
+            <td colspan="3">
+              <input type="text" colspan="3" placeholder="Whats on the schedule?" name="todo-text" id="fivePm-todo" />
+              <span id="user-fivePm-todo"></span>
+            </td>
+            <div id="msg"></div>
+            <td><button id="fiveSchedule">Schedule!</button></td>
+          </tr>
+
+        </tbody>
+      </table>
+     
+    </div>
+    <script src="script.js"></script>
+    <!--<script src="script-two.js"></script>-->
+    <!--TODO do nto connect until you solve the errors that you keep getting-->
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script>
+      const m = moment();
+      console.log(m.toString());
+      
+    </script>
+  </body>
+</html>
